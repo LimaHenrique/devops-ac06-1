@@ -9,5 +9,9 @@ class Curso(models.Model):
     nome = models.CharField(max_length=200)
     periodo = models.CharField(max_length=50)
     instituicao = models.CharField(max_length=200)
-class candidato(models.Model):
+ 
+class Vestibular(models.Model):
     nome = models.CharField(max_length=200)
+
+class candidato(models.Model):
+    nome_completo = models.CharField(max_length=200)
